@@ -1,1 +1,218 @@
 @import "variables", "reset", "fonts";
+
+* {
+  font-family: $ns-font;
+}
+
+body {
+  font-weight: 300;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Temporary CSS */
+.front-slider,
+.category-shortcut,
+.focus-package,
+.best-package,
+.early-bird,
+.home-shopping,
+.slogan,
+.review,
+footer {
+  display: none;
+}
+
+/* ########### Common CSS ############ */
+section {
+  border: 1px solid $black;
+  padding: 65px 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+  border-bottom: 1px solid $silver-gray;
+  position: relative;
+  .header-inner {
+    width: 1160px;
+    .logo-search {
+      padding: 15px 0;
+      display: flex;
+      gap: 76.54px;
+      align-items: center;
+      .logo {
+        font-size: 0;
+        img {
+          width: 134.93px;
+          height: 23px;
+        }
+      }
+      .search {
+        width: 520px;
+        position: relative;
+        input[type="text"] {
+          width: 100%;
+          background-color: $light-gray;
+          border: 1px solid $silver-gray;
+          padding: 10px;
+          padding-left: 20px;
+          border-radius: 30px;
+          &:focus::placeholder {
+            visibility: hidden;
+          }
+          &:focus {
+            border: 1px solid rgba($green, 0.5);
+            background-color: $white;
+            box-shadow: 0 0 5px rgba($green, 0.5);
+          }
+          &:focus + .bi {
+            color: $green;
+          }
+        }
+        .bi {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          color: $dark-gray;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .login-register-buttons {
+        margin-left: auto;
+        //로그인 전 보여질 UI
+        display: none;
+        button {
+          border: 1px solid $dim-gray;
+          border-radius: 5px;
+          padding: 5px 10px;
+          background-color: transparent;
+          &.btn-register {
+            background-color: $green;
+            color: $white;
+            border: transparent;
+          }
+        }
+      }
+      .user-alam {
+        //로그인 후에 보여질 UI
+        margin-left: auto;
+        display: flex;
+        .avatar {
+          img {
+            height: 28px;
+            border-radius: 50%;
+          }
+        }
+        span {
+          margin-right: 15px;
+          vertical-align: middle;
+          text-align: center;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .bi {
+            font-size: 20px;
+            width: 25px;
+            display: block;
+          }
+          em {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: $green;
+            border-radius: 50%;
+            right: -1px;
+            top: 2px;
+            text-align: center;
+            line-height: 10px;
+            &:before {
+              content: attr(data-count);
+              color: $white;
+              font-style: normal;
+              font-size: 11px;
+            }
+          }
+          .bi-bell + em {
+            right: -4px;
+          }
+          div {
+            font-size: 11px;
+            font-family: $rw-font;
+            font-weight: 400;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .gnb {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      a {
+        font-weight: 400;
+        color: $dim-black;
+        &:after {
+          content: "·";
+          padding-left: 13px;
+          cursor: default;
+        }
+        &:last-child:after {
+          display: none;
+        }
+        &:hover:not(.trigger) {
+          color: $green;
+        }
+      }
+      .trigger {
+        &:before {
+          content: "";
+          background: url(../images/list.svg);
+          width: 20px;
+          height: 18px;
+          display: inline-block;
+          margin-right: 5px;
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+  .mega-navi {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: $dark-black;
+    width: 100%;
+    display: none;
+    .mega-navi-inner {
+      width: 1160px;
+      margin: auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      .mega-navi-item {
+        color: $white;
+        font-size: 300;
+        line-height: 1.8em;
+        flex: 1;
+        b {
+        }
+        .mega-navi-item-wrap {
+          a {
+            display: block;
+            color: $dark-gray;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
