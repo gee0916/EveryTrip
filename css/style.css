@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Setting Variables : Font Family */
 /* Setting Variables : Text Color */
 /* Setting Variables : Object Color */
@@ -37,4 +38,213 @@ input {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  font-weight: 300;
+  margin: 0;
+  font-size: 15px;
+}
+
+/* Temporary CSS */
+.front-slider,
+.category-shortcut,
+.focus-package,
+.best-package,
+.early-bird,
+.home-shopping,
+.slogan,
+.review,
+footer {
+  display: none;
+}
+
+/* ########### Common CSS ############ */
+section {
+  border: 1px solid #000000;
+  padding: 65px 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+header .header-inner {
+  width: 1160px;
+}
+header .header-inner .logo-search {
+  padding: 15px 0;
+  display: flex;
+  gap: 76.54px;
+  align-items: center;
+}
+header .header-inner .logo-search .logo {
+  font-size: 0;
+}
+header .header-inner .logo-search .logo img {
+  width: 134.93px;
+  height: 23px;
+}
+header .header-inner .logo-search .search {
+  width: 520px;
+  position: relative;
+}
+header .header-inner .logo-search .search input[type=text] {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+header .header-inner .logo-search .search input[type=text]:focus::-moz-placeholder {
+  visibility: hidden;
+}
+header .header-inner .logo-search .search input[type=text]:focus::placeholder {
+  visibility: hidden;
+}
+header .header-inner .logo-search .search input[type=text]:focus {
+  border: 1px solid rgba(5, 114, 51, 0.5);
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(5, 114, 51, 0.5);
+}
+header .header-inner .logo-search .search input[type=text]:focus + .bi {
+  color: #057233;
+}
+header .header-inner .logo-search .search .bi {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  color: #bdbdbd;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+header .header-inner .logo-search .login-register-buttons {
+  margin-left: auto;
+  display: none;
+}
+header .header-inner .logo-search .login-register-buttons button {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+header .header-inner .logo-search .login-register-buttons button.btn-register {
+  background-color: #057233;
+  color: #ffffff;
+  border: transparent;
+}
+header .header-inner .logo-search .user-alam {
+  margin-left: auto;
+  display: flex;
+}
+header .header-inner .logo-search .user-alam .avatar img {
+  height: 28px;
+  border-radius: 50%;
+}
+header .header-inner .logo-search .user-alam span {
+  margin-right: 15px;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-inner .logo-search .user-alam span .bi {
+  font-size: 20px;
+  width: 25px;
+  display: block;
+}
+header .header-inner .logo-search .user-alam span em {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #057233;
+  border-radius: 50%;
+  right: -1px;
+  top: 2px;
+  text-align: center;
+  line-height: 10px;
+}
+header .header-inner .logo-search .user-alam span em:before {
+  content: attr(data-count);
+  color: #ffffff;
+  font-style: normal;
+  font-size: 11px;
+}
+header .header-inner .logo-search .user-alam span .bi-bell + em {
+  right: -4px;
+}
+header .header-inner .logo-search .user-alam span div {
+  font-size: 11px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+}
+header .header-inner .gnb {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+header .header-inner .gnb a {
+  font-weight: 400;
+  color: #555555;
+}
+header .header-inner .gnb a:after {
+  content: "·";
+  padding-left: 13px;
+  cursor: default;
+}
+header .header-inner .gnb a:last-child:after {
+  display: none;
+}
+header .header-inner .gnb a:hover:not(.trigger) {
+  color: #057233;
+}
+header .header-inner .gnb .trigger:before {
+  content: "";
+  background: url(../images/list.svg);
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  transform: translateY(4px);
+}
+header .mega-navi {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #333333;
+  width: 100%;
+  display: none;
+}
+header .mega-navi .mega-navi-inner {
+  width: 1160px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item {
+  color: #ffffff;
+  font-size: 300;
+  line-height: 1.8em;
+  flex: 1;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a {
+  display: block;
+  color: #bdbdbd;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover {
+  text-decoration: underline;
 }
