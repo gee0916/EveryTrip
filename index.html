@@ -7,7 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everytrip: 여행을 더 특별하게!</title>
     <link rel="icon" href="./images/로고.png">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- slider CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- css & js -->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/custom.js"></script>
+
 </head>
 
 <body>
@@ -27,20 +37,20 @@
                         <button class="btn-register">회원가입</button>
                     </div>
                     <div class="user-alam">
-                        <span class="avatar">
+                        <a class="avatar">
                             <img src="/images/avatar.jpg" alt="">
                             <div>마이페이지</div>
-                        </span>
-                        <span class="cart">
+                        </a>
+                        <a class="cart">
                             <i class="bi bi-calendar2-check"></i>
                             <em data-count="2"></em>
                             <div>내 여행</div>
-                        </span>
-                        <span class="alam">
+                        </a>
+                        <a class="alam">
                             <i class="bi bi-bell"></i>
                             <em data-count="9"></em>
                             <div>알림</div>
-                        </span>
+                        </a>
                     </div>
                 </div>
                 <div class="gnb">
@@ -107,12 +117,70 @@
                 </div>
             </div>
         </header>
+        <!-- front-slider -->
         <section class="front-slider">
-            <div class="front-slider-inneer"></div>
+            <div class="front-slider-items">
+                <div class="front-slider-item" style="background-color: #e9f7ff">
+                    <div class="front-slider-item-wrap" style="background-image: url(./images/슬라이더스위스.png)">
+                        <div class="desc slider1">
+                            <b>[5대 알프스 + 프리미엄레스토랑4회+ 하이킹4회]</b>
+                            <h1>몇 번을 가도 다시 가고 싶은 곳!<br>스위스여행 4박 6일</h1>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-slider-item" style="background-color: #CDE4AA">
+                    <div class="front-slider-item-wrap" style="background-image: url(./images/슬라이더몽골.png)">
+                        <div class="desc slider2">
+                            <b>[#싱그러운 초원 #베스트 셀러 #사막호텔]</b>
+                            <h1>몽골의 광활한 대지를 걷는 시간<br>몽골 완전 정복 8일</h1>
+                            <button style="background-color: #528749">자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-slider-item" style="background-color: #A5E1FF">
+                    <div class="front-slider-item-wrap" style="background-image: url(./images/슬라이더호주.png)">
+                        <div class="desc slider3">
+                            <b>[#블루마운틴 #모튼 아일랜드 #핫플레이스 정복]</b>
+                            <h1>나의 첫번째 크루즈 여행<br>호주 시드니 크루즈</h1>
+                            <button style="background-color: #1c0897">자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- category-shortcut -->
         <section class="category-shortcut">
-            <div class="category-shortcut-inneer"></div>
+            <div class="category-shortcut-inner">
+                <div class="category-shortcut-items">
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-calendar-event"></i></em>
+                        <span>진행 중인 이벤트</span>
+                    </a>
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-columns-gap"></i></em>
+                        <span>기획전</span>
+                    </a>
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-box2-heart"></i></em>
+                        <span>쿠폰</span>
+                    </a>
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-layout-text-window-reverse"></i></em>
+                        <span>공지사항</span>
+                    </a>
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-bag"></i></em>
+                        <span>홈쇼핑</span>
+                    </a>
+                    <a href="#none" class="category-shortcut-item">
+                        <em><i class="bi bi-headset"></i></em>
+                        <span>고객센터</span>
+                    </a>
+                </div>
+            </div>
         </section>
+        <!-- focus-package -->
         <section class="focus-package">
             <div class="focus-package-inneer"></div>
         </section>

@@ -47,11 +47,10 @@ body {
   font-weight: 300;
   margin: 0;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /* Temporary CSS */
-.front-slider,
-.category-shortcut,
 .focus-package,
 .best-package,
 .early-bird,
@@ -63,9 +62,13 @@ footer {
 }
 
 /* ########### Common CSS ############ */
-section {
-  border: 1px solid #000000;
+section:not(.front-slider) {
   padding: 65px 0;
+}
+
+[class*=inner] {
+  width: 1160px;
+  margin: auto;
 }
 
 /* Header */
@@ -149,7 +152,7 @@ header .header-inner .logo-search .user-alam .avatar img {
   height: 28px;
   border-radius: 50%;
 }
-header .header-inner .logo-search .user-alam span {
+header .header-inner .logo-search .user-alam a {
   margin-right: 15px;
   vertical-align: middle;
   text-align: center;
@@ -158,13 +161,14 @@ header .header-inner .logo-search .user-alam span {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
-header .header-inner .logo-search .user-alam span .bi {
+header .header-inner .logo-search .user-alam a .bi {
   font-size: 20px;
   width: 25px;
   display: block;
 }
-header .header-inner .logo-search .user-alam span em {
+header .header-inner .logo-search .user-alam a em {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -175,16 +179,16 @@ header .header-inner .logo-search .user-alam span em {
   text-align: center;
   line-height: 10px;
 }
-header .header-inner .logo-search .user-alam span em:before {
+header .header-inner .logo-search .user-alam a em:before {
   content: attr(data-count);
   color: #ffffff;
   font-style: normal;
   font-size: 11px;
 }
-header .header-inner .logo-search .user-alam span .bi-bell + em {
+header .header-inner .logo-search .user-alam a .bi-bell + em {
   right: -4px;
 }
-header .header-inner .logo-search .user-alam span div {
+header .header-inner .logo-search .user-alam a div {
   font-size: 11px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -247,4 +251,120 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a {
 }
 header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover {
   text-decoration: underline;
+}
+
+/* front-slider */
+.front-slider .front-slider-items .front-slider-item {
+  cursor: pointer;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+  width: 1160px;
+  margin: auto;
+  height: 405px;
+  background-size: cover;
+  border-radius: 10px;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc {
+  font-family: "SpoqaHanSansNeo-Regular";
+  font-size: 15px;
+  color: #333333;
+  padding: 106px 90px 0;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc b {
+  font-weight: 700;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 10px 0 25px;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc button {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #7f828e;
+  border: none;
+  padding: 7px 25px 7px 25px;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .slider2,
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .slider3 {
+  color: #ffffff;
+}
+.front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .slider2 {
+  padding: 76px 374px 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* category-shortcut */
+.category-shortcut .category-shortcut-inner .category-shortcut-items {
+  display: flex;
+  gap: 26px;
+  border-radius: 10px;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item {
+  flex: 1;
+  height: 125px;
+  box-shadow: 0 0 20px reba(#000000, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item em {
+  font-size: 20px;
+  color: #333333;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item em .bi {
+  transform: translate(0, -2px);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(1) .bi {
+  color: #006be5;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(2) .bi {
+  color: #fd5631;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(3) .bi {
+  color: #ff4c79;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(4) .bi {
+  color: #2ecc71;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(5) .bi {
+  color: #00d2d3;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(6) .bi {
+  color: #bdbdbd;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(1) {
+  background-color: rgba(0, 107, 229, 0.2);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(2) {
+  background-color: rgba(253, 86, 49, 0.2);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(3) {
+  background-color: rgba(255, 76, 121, 0.2);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(4) {
+  background-color: rgba(46, 204, 113, 0.2);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(5) {
+  background-color: rgba(0, 210, 211, 0.2);
+}
+.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(6) {
+  background-color: rgba(153, 153, 153, 0.2);
 }
