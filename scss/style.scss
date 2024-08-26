@@ -2,6 +2,7 @@
 
 * {
   font-family: $ns-font;
+  color: $dark-black;
 }
 
 body {
@@ -12,9 +13,6 @@ body {
 }
 
 /* Temporary CSS */
-.focus-package,
-.best-package,
-.early-bird,
 .home-shopping,
 .slogan,
 .review,
@@ -30,6 +28,22 @@ section:not(.front-slider) {
 [class*="inner"] {
   width: 1160px;
   margin: auto;
+}
+
+.front-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  margin-bottom: 19px;
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 /* Header */
@@ -255,7 +269,10 @@ header {
         }
         .slider2,
         .slider3 {
-          color: $white;
+          b,
+          h1 {
+            color: $white;
+          }
         }
         .slider2 {
           padding: 76px 374px 0;
@@ -268,7 +285,8 @@ header {
 }
 
 /* category-shortcut */
-.category-shortcut {
+section.category-shortcut {
+  padding: 38px 0 65px;
   .category-shortcut-inner {
     .category-shortcut-items {
       display: flex;
@@ -341,6 +359,264 @@ header {
           background-color: rgba($light-black, 0.2);
         }
       }
+    }
+  }
+}
+
+/* focus-package */
+.focus-package {
+  background-color: $cloudy-gray;
+  .focus-package-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .focus-package-content {
+      position: relative;
+      .focus-package-items1,
+      .focus-package-items2 {
+        overflow: hidden;
+        .slick-list {
+          margin: 0 -30px;
+        }
+        .slick-slide {
+          margin: 0 30px;
+        }
+        .slick-prev {
+          z-index: 9999;
+        }
+        .focus-package-item {
+          cursor: pointer;
+          .thum {
+            width: 100%;
+            height: 275px;
+            margin-bottom: 11px;
+            img {
+              object-fit: cover;
+              width: inherit;
+              height: inherit;
+            }
+          }
+          .desc {
+            font-family: $shsn-font;
+            .package-title {
+              font-size: 13px;
+              font-weight: 400;
+              color: $dim-black;
+            }
+            h4 {
+              font-size: 16px;
+              font-weight: 500;
+              color: $dark-black;
+            }
+            .package-info {
+              font-size: 13px;
+              font-weight: 400;
+              color: $silver-black;
+            }
+            .package-price {
+              font-size: 15px;
+              font-weight: 400;
+              color: $dark-black;
+              text-align: end;
+              margin-top: 14px;
+              span {
+                font-size: 20px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      .controls1,
+      .controls2 {
+        width: 100%;
+        top: 50%; /* 슬라이드의 중앙에 위치 */
+        position: absolute; /* 절대 위치 설정 */
+        transform: translateY(-50%); /* 수직 중앙 정렬 */
+        .prevArrow,
+        .nextArrow {
+          position: absolute; /* 절대 위치 설정 */
+          font-family: $bs-font;
+          color: $dark-black;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 30px;
+          &:before {
+            content: "\F285"; /* 아이콘 */
+            display: inline-block;
+          }
+        }
+        .prevArrow {
+          left: -50px; /* 왼쪽 위치 */
+          &::before {
+            transform: rotateY(180deg);
+          }
+        }
+        .nextArrow {
+          right: -50px; /* 오른쪽 위치 */
+        }
+      }
+    }
+  }
+}
+
+/* best-package */
+.best-package {
+  .best-package-inner {
+    .best-package-content {
+      .front-header {
+        h2 {
+          span {
+            color: $cyanblue;
+          }
+        }
+        .btn-view-all {
+          border: 1px solid $dark-gray;
+          background-color: $white;
+          padding: 3px 15px;
+          border-radius: 30px;
+          font-size: 13px;
+        }
+      }
+      .best-package-wrap {
+        display: flex;
+        gap: 26px;
+        .best-package-banner {
+          width: 708px;
+          height: 489px;
+          img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+          }
+        }
+        .best-package-items-outer {
+          font-family: $shsn-font;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .best-package-intro {
+            font-weight: 400;
+            h3 {
+              font-size: 24px;
+              color: #038db1;
+            }
+            .desc,
+            .tag {
+              font-family: $rw-font;
+              font-size: 20px;
+              color: $dark-black;
+            }
+          }
+          .best-package-items {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            .best-package-item {
+              display: flex;
+              gap: 9px;
+              cursor: pointer;
+              .thum {
+                width: 130px;
+                height: 102px;
+                img {
+                  object-fit: cover;
+                  width: inherit;
+                  height: inherit;
+                }
+              }
+              .desc {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .best-package-title {
+                  font-size: 13px;
+                  color: $dim-black;
+                  font-weight: 400;
+                }
+                h4 {
+                  font-size: 15px;
+                  color: $dark-black;
+                  font-weight: 500;
+                }
+                .best-package-info {
+                  font-size: 12px;
+                  color: $silver-black;
+                  font-weight: 400;
+                }
+                .best-package-price {
+                  font-size: 11px;
+                  color: $dark-black;
+                  font-weight: 400;
+                  span {
+                    font-size: 16px;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* early-bird */
+.early-bird {
+  background-color: $cloudy-gray;
+  .early-bird-inner {
+    .early-bird-content {
+      .countdown-wrap {
+        width: 345px;
+        margin: auto;
+        margin-bottom: 54px;
+        text-align: center;
+        .early-bird-info {
+          font-size: 13px;
+          color: $silver-black;
+          white-space: nowrap;
+          font-weight: 400;
+        }
+      }
+      .early-bird-banner {
+        width: 1160px;
+        height: 338px;
+        img {
+          width: inherit;
+        }
+      }
+    }
+  }
+}
+
+/* countdown */
+.countdown {
+  font-size: 36px;
+  margin-bottom: 40px;
+  em {
+    font-weight: 400;
+    font-style: normal;
+    background-color: $cyanblue;
+    color: $white;
+    padding: 12px 8px;
+    border-radius: 5px;
+    position: relative;
+    &:after {
+      content: "hrs";
+      position: absolute;
+      font-size: 12px;
+      text-align: center;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      color: $dark-black;
+    }
+    &:nth-child(2):after {
+      content: "min";
+    }
+    &:nth-child(3):after {
+      content: "sec";
     }
   }
 }

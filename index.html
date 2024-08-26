@@ -8,8 +8,9 @@
     <title>Everytrip: 여행을 더 특별하게!</title>
     <link rel="icon" href="./images/로고.png">
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- countdown CDN -->
+    <script src="script/the-final-countdown/jquery.countdown.min.js"></script>
     <!-- slider CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
@@ -182,23 +183,248 @@
         </section>
         <!-- focus-package -->
         <section class="focus-package">
-            <div class="focus-package-inneer"></div>
+            <div class="focus-package-inner">
+                <div class="focus-package-content">
+                    <div class="front-header">
+                        <h2>이달의 인기 상품</h2>
+                        <a href="" class="btn-view-all">전체 상품 보러가기</a>
+                    </div>
+                    <div class="focus-package-items1">
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/다낭.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">요즘 가장 핫한 여행지</div>
+                                <h4>다낭/오이한3~5일</h4>
+                                <div class="package-info">#마사지 #가성비추천 #핵심관광</div>
+                                <div class="package-price">
+                                    <span>369,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/제주도.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">여행 트랜드를 이끄는 핫플레이스</div>
+                                <h4>제주도 20일</h4>
+                                <div class="package-info">#힐링 #인생샷 #가성비갑</div>
+                                <div class="package-price">
+                                    <span>249,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/코타키나발루.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">열대 휴양지 코타키나발루로 떠나는 여행</div>
+                                <h4>코타키나발루 7일</h4>
+                                <div class="package-info">#에메랄드빛바다 #열대정원 #가족힐링여행</div>
+                                <div class="package-price">
+                                    <span>502,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/푸켓.jpeg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">화려한 야경과 액티비티가 가득</div>
+                                <h4>푸켓 7일</h4>
+                                <div class="package-info">#화려한야경 #가족여행지 #액티비티천국</div>
+                                <div class="package-price">
+                                    <span>449,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/베이징.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">화려한 도시와 전통이 공존하는 곳!</div>
+                                <h4>베이징 10일</h4>
+                                <div class="package-info">#화려한도시 #전통문화 #알뜰 여행</div>
+                                <div class="package-price">
+                                    <span>310,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls1" id="controls1">
+                        <span class="prevArrow"></span>
+                        <span class="nextArrow"></span>
+                    </div>
+                </div>
+                <div class="focus-package-content">
+                    <div class="front-header">
+                        <h2>출발임박특가 상품</h2>
+                        <a href="" class="btn-view-all">전체 상품 보러가기</a>
+                    </div>
+                    <div class="focus-package-items2">
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/노르웨이 피오르드.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">북유럽의 아듬다운 자연을 만나다</div>
+                                <h4>노르웨이 피오르드 여행 7일</h4>
+                                <div class="package-info">#북유럽 3대 피오르드 #유네스코 세계문화유산 #크루즈 여행</div>
+                                <div class="package-price">
+                                    <span>3,990,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/뉴욕.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">세계의 중심, 뉴욕에서 자유를 만끽하다</div>
+                                <h4>뉴욕 패키지 6일</h4>
+                                <div class="package-info">#자유의 여신상 #센트럴파크 #타임스퀘어 #맨해튼 야경</div>
+                                <div class="package-price">
+                                    <span>2,890,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/유니버셜 스튜디오.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">꿈과 환상이 가득한 유니버셜 스튜디오로 떠나자</div>
+                                <h4>오사카 유니버셜 스튜디오 4일</h4>
+                                <div class="package-info">#유니버셜 스튜디오 재팬 #스튜디오 패스 포함 </div>
+                                <div class="package-price">
+                                    <span>299,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/하와이.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">하와이의 아름다운 자연 속으로</div>
+                                <h4>하와이 4박 6일</h4>
+                                <div class="package-info">#와이키키 비치 #다이아몬드 헤드 #루아우 파티</div>
+                                <div class="package-price">
+                                    <span>2,790,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-package-item">
+                            <div class="thum">
+                                <img src="./images/발리.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <div class="package-title">발리의 신비로운 문화를 경험하다</div>
+                                <h4>발리 5박 7일</h4>
+                                <div class="package-info">#울루와투 사원 #스미냑 해변 #발리 마사지</div>
+                                <div class="package-price">
+                                    <span>590,000</span>원~
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls2">
+                        <span class="prevArrow"></span>
+                        <span class="nextArrow"></span>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- best-package -->
         <section class="best-package">
-            <div class="best-package-inneer"></div>
+            <div class="best-package-inner">
+                <div class="best-package-content">
+                    <div class="front-header">
+                        <h2><span>지금이 기회!</span> 당신만을 위한 추천여행</h2>
+                        <a href="#none" class="btn-view-all">전체보기</a>
+                    </div>
+                    <div class="best-package-wrap">
+                        <div class="best-package-banner">
+                            <img src="./images/베스트셀러 상품 배너 북유럽.png" alt="">
+                        </div>
+                        <div class="best-package-items-outer">
+                            <div class="best-package-intro">
+                                <h3>감성을 담은 특별한 여행</h3>
+                                <div class="desc">환상적인 자연과 독특한 문화!<br>
+                                    북극권의 아름다운 풍경과 오로라를<br>
+                                    경험할 수 있는 여행의 기회를 놓치지 마세요</div>
+                                <div class="tag">#북유럽여행 #자연경관 #독특한문화</div>
+                            </div>
+                            <div class="best-package-items">
+                                <div class="best-package-item">
+                                    <div class="thum">
+                                        <img src="./images/노르웨이 오로라.webp" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="best-package-title">신비로운 오로라를 만나는 북극의 밤</div>
+                                        <h4>노르웨이 오로라 여행 7일</h4>
+                                        <div class="best-package-info">#오로라 관측 #트롬쇠 #북극 모험</div>
+                                        <div class="best-package-price"><span>2,490,000</span>원~</div>
+                                    </div>
+                                </div>
+                                <div class="best-package-item">
+                                    <div class="thum">
+                                        <img src="./images/덴마크 코펜하겐.jpg" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="best-package-title">안데르센 동화 속 도시를 탐험하다</div>
+                                        <h4>덴마크 코펜하겐 여행 6일</h4>
+                                        <div class="best-package-info">#인어공주 동상 #티볼리 정원 #코펜하겐 자전거 투어</div>
+                                        <div class="best-package-price"><span>1,820,000</span>원~</div>
+                                    </div>
+                                </div>
+                                <div class="best-package-item">
+                                    <div class="thum">
+                                        <img src="./images/아이슬란드.jpg" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="best-package-title">신비로운 자연의 경이로움을 경험하다</div>
+                                        <h4>아이슬란드 골든 서클 여행 5일</h4>
+                                        <div class="best-package-info">#게이시르 #씽벨리르 국립공원 #블루라군</div>
+                                        <div class="best-package-price"><span>2,590,000</span>원~</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- early-bird -->
         <section class="early-bird">
-            <div class="early-bird-inneer"></div>
+            <div class="early-bird-inner">
+                <div class="early-bird-content">
+                    <div class="countdown-wrap">
+                        <div class="countdown"></div>
+                        <span class="early-bird-info">
+                            본 이벤트는 사전에 별도 공지 없이 이벤트가 종료될 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="early-bird-banner">
+                        <img src="./images/얼리버드 이미지.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="home-shopping
     ">
-            <div class="home-shopping-inneer"></div>
+            <div class="home-shopping-inner"></div>
         </section>
         <section class="slogan">
-            <div class="slogan-inneer"></div>
+            <div class="slogan-inner"></div>
         </section>
         <section class="review">
-            <div class="review-inneer"></div>
+            <div class="review-inner"></div>
         </section>
         <footer></footer>
     </div>
