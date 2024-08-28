@@ -235,10 +235,11 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   text-align: end;
   margin-top: 14px;
 }
-.focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-price span,
-.focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price span {
+.focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-price em,
+.focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price em {
   font-size: 20px;
   font-weight: 700;
+  font-style: normal;
 }
 .focus-package .focus-package-inner .focus-package-content .controls1,
 .focus-package .focus-package-inner .focus-package-content .controls2 {
@@ -361,9 +362,10 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   color: #333333;
   font-weight: 400;
 }
-.best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-price span {
+.best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-price em {
   font-size: 16px;
   font-weight: 700;
+  font-style: normal;
 }
 
 /* early-bird */
