@@ -184,9 +184,10 @@ section.category-shortcut {
               color: $dark-black;
               text-align: end;
               margin-top: 14px;
-              span {
+              em {
                 font-size: 20px;
                 font-weight: 700;
+                font-style: normal;
               }
             }
           }
@@ -307,9 +308,10 @@ section.category-shortcut {
                   font-size: 11px;
                   color: $dark-black;
                   font-weight: 400;
-                  span {
+                  em {
                     font-size: 16px;
                     font-weight: 700;
+                    font-style: normal;
                   }
                 }
               }
