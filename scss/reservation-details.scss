@@ -1,0 +1,237 @@
+@import "variables", "reset", "fonts";
+
+.reservation {
+  .reservation-inner {
+    display: flex;
+    gap: 30px;
+    > div {
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: 0 0 20px rgba($black, 0.05);
+      padding: 30px;
+    }
+    .headline {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .detail-wrap {
+      width: 800px;
+      .headline {
+        margin-bottom: 30px;
+      }
+      .detail-items {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .detail-item {
+          box-shadow: 0 0 10px 0 rgba($black, 0.1);
+          display: flex;
+          padding: 30px 28.5px;
+          align-items: center;
+          border-radius: 5px;
+          .thum {
+            width: 140px;
+            height: 107px;
+            img {
+              width: inherit;
+              height: inherit;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+          .package-wrap {
+            display: flex;
+            gap: 14px;
+            flex: 1;
+            .desc {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              .state {
+                background-color: $light-gray;
+                border: 1px solid $silver-gray;
+                font-size: 11px;
+                font-weight: 700;
+                display: inline-block;
+                padding: 3px 10px;
+                border-radius: 2px;
+                height: fit-content;
+                width: fit-content;
+              }
+              .package-name {
+                font-size: 14px;
+                font-weight: 500;
+              }
+              .detail-view {
+                font-size: 13px;
+                font-weight: 700;
+                color: $green;
+                position: relative;
+                &:after {
+                  content: "\f285";
+                  display: inline-block;
+                  font-family: $bs-font;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-43%);
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+          .package-inquiry {
+            font-size: 14px;
+            font-weight: 500;
+            background-color: $silver-gray;
+            border-radius: 3px;
+            padding: 8px 28px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+    .view-control-wrap {
+      flex-basis: 330px;
+      height: fit-content;
+      flex: 1;
+      .calender-view-wrap {
+        .reset-btn-wrap {
+          text-align: end;
+          .reset-btn {
+            background-color: $white;
+            border-radius: 3px;
+            border: 1px solid $dim-gray;
+            padding: 3px 10px;
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+        .calendar {
+          margin: 15px 0 20px;
+          box-shadow: 0 0 20px 0 rgba($black, 0.1);
+          padding: 15px;
+          position: relative;
+          // 달력 year-month
+          .ui-datepicker-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: $shsn-font;
+            color: #4a5660;
+            font-weight: 400;
+            font-size: 15px;
+          }
+          // 달력 월 이동
+          .ui-datepicker-prev,
+          .ui-datepicker-next {
+            position: absolute;
+            top: 17px;
+            cursor: pointer;
+            padding-right: 0;
+            &::before {
+              content: "\f285";
+              display: inline-block;
+              font-family: bootstrap-icons;
+              font-size: 13px;
+              width: 67px;
+              color: #b5bec6;
+            }
+          }
+          .ui-datepicker-prev {
+            left: 0;
+            &::before {
+              transform: rotate(180deg);
+            }
+          }
+          .ui-datepicker-next {
+            right: 0;
+          }
+          .ui-datepicker-prev span,
+          .ui-datepicker-next span {
+            display: none;
+          }
+          // 달력 컨테이너
+          .ui-datepicker,
+          .ui-datepicker table,
+          .ui-datepicker tr,
+          .ui-datepicker td,
+          .ui-datepicker th {
+            margin: 0;
+            padding: 0;
+            border: none;
+            border-spacing: 4px;
+          }
+          .ui-datepicker table {
+            width: 100%;
+          }
+          .ui-datepicker th {
+            width: 14%;
+            span {
+              font-family: $rw-font;
+              text-transform: uppercase;
+              font-size: 13px;
+              font-weight: 400;
+              color: #b5bec6;
+            }
+          }
+          .ui-datepicker td {
+            font-size: 15px;
+            font-weight: 400;
+            color: #4a5660;
+            text-align: center;
+            .ui-state-default {
+              width: 25px;
+              height: 25px;
+              border: 1px solid transparent;
+              border-radius: 50%;
+              display: block;
+              line-height: 23px;
+            }
+            .ui-state-active {
+              color: $white;
+              background-color: $green;
+            }
+          }
+          .ui-datepicker-other-month {
+            .ui-state-default {
+              color: $silver-gray;
+            }
+          }
+        }
+      }
+      .inquery-state-wrap {
+        .state-radio-wrap {
+          display: flex;
+          flex-direction: column;
+          > div {
+            margin-bottom: 5px;
+            label {
+              font-size: 14px;
+              font-weight: 400;
+              input[type="radio"] {
+                display: none;
+                + em {
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 3px;
+                  transform: translateY(3px);
+                  font-style: normal;
+                  cursor: pointer;
+                  &::before {
+                    content: "\F26B";
+                    font-family: $bs-font;
+                    color: $dark-gray;
+                  }
+                }
+                &:checked + em::before {
+                  color: $green;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
