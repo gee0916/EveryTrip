@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everytrip: 여행을 더 특별하게!</title>
+  <link rel="icon" href="/images/로고.png">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- calender-->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- css & js -->
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/reservation-details.css">
+  <script src="/script/include.js"></script>
+  <script src="/script/reservation-details.js"></script>
+</head>
+
+<body>
+  <div class="container front">
+    <!-- header -->
+    <div class="header-include"></div>
+    <!-- reservation-details -->
+    <section class="reservation">
+      <div class="reservation-inner">
+        <div class="detail-wrap">
+          <h2 class="headline">내 여행</h2>
+          <div class="detail-items">
+            <div class="detail-item">
+              <div class="package-wrap">
+                <div class="thum">
+                  <img src="/images/스페인6.jpg" alt="">
+                </div>
+                <div class="desc">
+                  <div class="state">여행 전</div>
+                  <div class="package-name"> 스페인 완전 일주 10</div>
+                  <a href="#none" class="detail-view">예약 상세 보기</a>
+                </div>
+              </div>
+              <a href="#none" class="package-inquiry">문의하기</a>
+            </div>
+            <div class="detail-item">
+              <div class="package-wrap">
+                <div class="thum">
+                  <img src="/images/타이베이.jpg" alt="">
+                </div>
+                <div class="desc">
+                  <div class="state">여행 완료</div>
+                  <div class="package-name">대만 타이베이 여행 3일</div>
+                  <a href="#none" class="detail-view">예약 상세 보기</a>
+                </div>
+              </div>
+              <a href="#none" class="package-inquiry">문의하기</a>
+            </div>
+            <div class="detail-item">
+              <div class="package-wrap">
+                <div class="thum">
+                  <img src="/images/터키.jpg" alt="">
+                </div>
+                <div class="desc">
+                  <div class="state">여행 완료</div>
+                  <div class="package-name">터키 정복 7일</div>
+                  <a href="#none" class="detail-view">예약 상세 보기</a>
+                </div>
+              </div>
+              <a href="#none" class="package-inquiry">문의하기</a>
+            </div>
+          </div>
+        </div>
+        <div class="view-control-wrap">
+          <div class="calender-view-wrap">
+            <h2 class="headline">달력으로 조회</h2>
+            <div class="reset-btn-wrap">
+              <button class="reset-btn">초기화</button>
+            </div>
+            <div id="calendar" class="calendar"></div>
+          </div>
+          <div class="inquery-state-wrap">
+            <h2 class="headline">조회 조건</h2>
+            <div class="state-radio-wrap">
+              <div>
+                <label>
+                  <input type='radio' name='inquery-state' value="전체" checked /><em></em>전체
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type='radio' name='inquery-state' value="여행상품" /><em></em>여행상품
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type='radio' name='inquery-state' value="투어패스" /><em></em>투어패스
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type='radio' name='inquery-state' value="항공권" /><em></em>항공권
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type='radio' name='inquery-state' value="호텔" /><em></em>호텔
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class=" footer-include"></div>
+  </div>
+  </div>
+</body>
+
+</html>
