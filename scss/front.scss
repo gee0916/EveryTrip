@@ -102,7 +102,7 @@ section.category-shortcut {
         span {
           font-size: 16px;
           font-family: $rw-font;
-          font-weight: 400;
+
           color: $dark-black;
         }
         &:nth-child(1) {
@@ -165,7 +165,7 @@ section.category-shortcut {
             font-family: $shsn-font;
             .package-title {
               font-size: 13px;
-              font-weight: 400;
+
               color: $dim-black;
             }
             h4 {
@@ -175,19 +175,18 @@ section.category-shortcut {
             }
             .package-info {
               font-size: 13px;
-              font-weight: 400;
+
               color: $silver-black;
             }
             .package-price {
               font-size: 15px;
-              font-weight: 400;
+
               color: $dark-black;
               text-align: end;
               margin-top: 14px;
               em {
                 font-size: 20px;
                 font-weight: 700;
-                font-style: normal;
               }
             }
           }
@@ -196,30 +195,30 @@ section.category-shortcut {
       .controls1,
       .controls2 {
         width: 100%;
-        top: 50%; /* 슬라이드의 중앙에 위치 */
-        position: absolute; /* 절대 위치 설정 */
-        transform: translateY(-50%); /* 수직 중앙 정렬 */
-        .prevArrow,
-        .nextArrow {
-          position: absolute; /* 절대 위치 설정 */
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        .prev-arrow,
+        .next-arrow {
+          position: absolute;
           font-family: $bs-font;
           color: $dark-black;
           display: inline-block;
           cursor: pointer;
           font-size: 30px;
           &:before {
-            content: "\F285"; /* 아이콘 */
+            content: "\F285";
             display: inline-block;
           }
         }
-        .prevArrow {
-          left: -50px; /* 왼쪽 위치 */
+        .prev-arrow {
+          left: -50px;
           &::before {
             transform: rotateY(180deg);
           }
         }
-        .nextArrow {
-          right: -50px; /* 오른쪽 위치 */
+        .next-arrow {
+          right: -50px;
         }
       }
     }
@@ -234,7 +233,6 @@ section.category-shortcut {
         h2 {
           em {
             color: $cyanblue;
-            font-style: normal;
           }
         }
       }
@@ -256,7 +254,6 @@ section.category-shortcut {
           flex-direction: column;
           justify-content: space-between;
           .best-package-intro {
-            font-weight: 400;
             h3 {
               font-size: 24px;
               color: #038db1;
@@ -292,7 +289,6 @@ section.category-shortcut {
                 .best-package-title {
                   font-size: 13px;
                   color: $dim-black;
-                  font-weight: 400;
                 }
                 h4 {
                   font-size: 15px;
@@ -302,16 +298,14 @@ section.category-shortcut {
                 .best-package-info {
                   font-size: 12px;
                   color: $silver-black;
-                  font-weight: 400;
                 }
                 .best-package-price {
                   font-size: 11px;
                   color: $dark-black;
-                  font-weight: 400;
+
                   em {
                     font-size: 16px;
                     font-weight: 700;
-                    font-style: normal;
                   }
                 }
               }
@@ -337,7 +331,6 @@ section.category-shortcut {
           font-size: 13px;
           color: $silver-black;
           white-space: nowrap;
-          font-weight: 400;
         }
       }
       .early-bird-banner {
@@ -356,8 +349,6 @@ section.category-shortcut {
   font-size: 36px;
   margin-bottom: 40px;
   em {
-    font-weight: 400;
-    font-style: normal;
     background-color: $cyanblue;
     color: $white;
     padding: 12px 8px;
@@ -448,9 +439,8 @@ section.category-shortcut {
       span {
         font-family: $shsn-font;
         font-size: 24px;
-        font-weight: 400;
+
         em {
-          font-style: normal;
           color: $cyanblue;
           font-weight: 700;
         }
@@ -500,7 +490,7 @@ section.category-shortcut {
               }
               p {
                 font-size: 15px;
-                font-weight: 400;
+
                 margin: 0;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -523,7 +513,7 @@ section.category-shortcut {
       .btn-review {
         font-size: 16px;
         border: 1px solid $dim-gray;
-        font-weight: 400;
+
         color: $dim-black;
         padding: 5px 20px;
         border-radius: 30px;

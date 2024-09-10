@@ -33,6 +33,20 @@ input {
   border: none;
 }
 
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 @font-face {
   font-family: "SpoqaHanSansNeo-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
@@ -138,7 +152,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 section.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
   color: #333333;
 }
 section.category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item:nth-child(1) {
@@ -212,7 +225,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-title,
 .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-title {
   font-size: 13px;
-  font-weight: 400;
   color: #555555;
 }
 .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc h4,
@@ -224,13 +236,11 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-info,
 .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-info {
   font-size: 13px;
-  font-weight: 400;
   color: #777777;
 }
 .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-price,
 .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price {
   font-size: 15px;
-  font-weight: 400;
   color: #333333;
   text-align: end;
   margin-top: 14px;
@@ -239,50 +249,48 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price em {
   font-size: 20px;
   font-weight: 700;
-  font-style: normal;
 }
 .focus-package .focus-package-inner .focus-package-content .controls1,
 .focus-package .focus-package-inner .focus-package-content .controls2 {
   width: 100%;
-  top: 50%; /* 슬라이드의 중앙에 위치 */
-  position: absolute; /* 절대 위치 설정 */
-  transform: translateY(-50%); /* 수직 중앙 정렬 */
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
 }
-.focus-package .focus-package-inner .focus-package-content .controls1 .prevArrow,
-.focus-package .focus-package-inner .focus-package-content .controls1 .nextArrow,
-.focus-package .focus-package-inner .focus-package-content .controls2 .prevArrow,
-.focus-package .focus-package-inner .focus-package-content .controls2 .nextArrow {
-  position: absolute; /* 절대 위치 설정 */
+.focus-package .focus-package-inner .focus-package-content .controls1 .prev-arrow,
+.focus-package .focus-package-inner .focus-package-content .controls1 .next-arrow,
+.focus-package .focus-package-inner .focus-package-content .controls2 .prev-arrow,
+.focus-package .focus-package-inner .focus-package-content .controls2 .next-arrow {
+  position: absolute;
   font-family: bootstrap-icons;
   color: #333333;
   display: inline-block;
   cursor: pointer;
   font-size: 30px;
 }
-.focus-package .focus-package-inner .focus-package-content .controls1 .prevArrow:before,
-.focus-package .focus-package-inner .focus-package-content .controls1 .nextArrow:before,
-.focus-package .focus-package-inner .focus-package-content .controls2 .prevArrow:before,
-.focus-package .focus-package-inner .focus-package-content .controls2 .nextArrow:before {
-  content: "\f285"; /* 아이콘 */
+.focus-package .focus-package-inner .focus-package-content .controls1 .prev-arrow:before,
+.focus-package .focus-package-inner .focus-package-content .controls1 .next-arrow:before,
+.focus-package .focus-package-inner .focus-package-content .controls2 .prev-arrow:before,
+.focus-package .focus-package-inner .focus-package-content .controls2 .next-arrow:before {
+  content: "\f285";
   display: inline-block;
 }
-.focus-package .focus-package-inner .focus-package-content .controls1 .prevArrow,
-.focus-package .focus-package-inner .focus-package-content .controls2 .prevArrow {
-  left: -50px; /* 왼쪽 위치 */
+.focus-package .focus-package-inner .focus-package-content .controls1 .prev-arrow,
+.focus-package .focus-package-inner .focus-package-content .controls2 .prev-arrow {
+  left: -50px;
 }
-.focus-package .focus-package-inner .focus-package-content .controls1 .prevArrow::before,
-.focus-package .focus-package-inner .focus-package-content .controls2 .prevArrow::before {
+.focus-package .focus-package-inner .focus-package-content .controls1 .prev-arrow::before,
+.focus-package .focus-package-inner .focus-package-content .controls2 .prev-arrow::before {
   transform: rotateY(180deg);
 }
-.focus-package .focus-package-inner .focus-package-content .controls1 .nextArrow,
-.focus-package .focus-package-inner .focus-package-content .controls2 .nextArrow {
-  right: -50px; /* 오른쪽 위치 */
+.focus-package .focus-package-inner .focus-package-content .controls1 .next-arrow,
+.focus-package .focus-package-inner .focus-package-content .controls2 .next-arrow {
+  right: -50px;
 }
 
 /* best-package */
 .best-package .best-package-inner .best-package-content .front-header h2 em {
   color: #006be5;
-  font-style: normal;
 }
 .best-package .best-package-inner .best-package-content .best-package-wrap {
   display: flex;
@@ -303,9 +311,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro {
-  font-weight: 400;
 }
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro h3 {
   font-size: 24px;
@@ -345,7 +350,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-title {
   font-size: 13px;
   color: #555555;
-  font-weight: 400;
 }
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc h4 {
   font-size: 15px;
@@ -355,17 +359,14 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-info {
   font-size: 12px;
   color: #777777;
-  font-weight: 400;
 }
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-price {
   font-size: 11px;
   color: #333333;
-  font-weight: 400;
 }
 .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-price em {
   font-size: 16px;
   font-weight: 700;
-  font-style: normal;
 }
 
 /* early-bird */
@@ -382,7 +383,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   font-size: 13px;
   color: #777777;
   white-space: nowrap;
-  font-weight: 400;
 }
 .early-bird .early-bird-inner .early-bird-content .early-bird-banner {
   width: 1160px;
@@ -398,8 +398,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   margin-bottom: 40px;
 }
 .countdown em {
-  font-weight: 400;
-  font-style: normal;
   background-color: #006be5;
   color: #ffffff;
   padding: 12px 8px;
@@ -485,10 +483,8 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .slogan .slogan-inner .slogan-content span {
   font-family: "SpoqaHanSansNeo-Regular";
   font-size: 24px;
-  font-weight: 400;
 }
 .slogan .slogan-inner .slogan-content span em {
-  font-style: normal;
   color: #006be5;
   font-weight: 700;
 }
@@ -532,7 +528,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 }
 .review .review-inner .review-content .review-wrap .review-items .review-item .review-info p {
   font-size: 15px;
-  font-weight: 400;
   margin: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -550,7 +545,6 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
 .review .review-inner .review-content .btn-review {
   font-size: 16px;
   border: 1px solid #dddddd;
-  font-weight: 400;
   color: #555555;
   padding: 5px 20px;
   border-radius: 30px;

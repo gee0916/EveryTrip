@@ -33,6 +33,20 @@ input {
   border: none;
 }
 
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 @font-face {
   font-family: "SpoqaHanSansNeo-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
@@ -45,10 +59,13 @@ input {
 }
 
 body {
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   font-size: 15px;
   overflow-x: hidden;
+}
+body.active {
+  overflow: hidden;
 }
 
 /* ########### Common CSS ############ */
@@ -74,7 +91,6 @@ section:not(.front-slider) {
 }
 .front-header a {
   font-size: 14px;
-  font-weight: 400;
 }
 .front-header a.btn-view-all {
   border: 1px solid #bdbdbd;
@@ -82,6 +98,15 @@ section:not(.front-slider) {
   padding: 3px 15px;
   border-radius: 30px;
   font-size: 13px;
+}
+
+.btn-modal-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3em;
 }
 
 /* Header */
@@ -202,7 +227,6 @@ header .header-inner .logo-search .user-alam a em {
 header .header-inner .logo-search .user-alam a em:before {
   content: attr(data-count);
   color: #ffffff;
-  font-style: normal;
   font-size: 11px;
 }
 header .header-inner .logo-search .user-alam a .bi-bell + em {
@@ -211,7 +235,6 @@ header .header-inner .logo-search .user-alam a .bi-bell + em {
 header .header-inner .logo-search .user-alam a div {
   font-size: 11px;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
   white-space: nowrap;
 }
 header .header-inner .gnb {
@@ -221,7 +244,6 @@ header .header-inner .gnb {
   gap: 26px;
 }
 header .header-inner .gnb a {
-  font-weight: 400;
   color: #555555;
 }
 header .header-inner .gnb a:after {
