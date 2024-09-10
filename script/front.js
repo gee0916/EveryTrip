@@ -2,7 +2,7 @@ $(function () {
   /* front slider */
   $(".front-slider-items").slick({
     infinite: true,
-    arrows: true,
+    arrows: false,
     dots: true,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -15,15 +15,15 @@ $(function () {
   $(".focus-package-items1").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: $(".controls1 .prevArrow"),
-    nextArrow: $(".controls1 .nextArrow"),
+    prevArrow: $(".controls1 .prev-arrow"),
+    nextArrow: $(".controls1 .next-arrow"),
   });
 
   $(".focus-package-items2").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: $(".controls2 .prevArrow"),
-    nextArrow: $(".controls2 .nextArrow"),
+    prevArrow: $(".controls2 .prev-arrow"),
+    nextArrow: $(".controls2 .next-arrow"),
   });
 
   /* countdown */

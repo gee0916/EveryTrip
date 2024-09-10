@@ -101,7 +101,7 @@ section.category-package {
             font-family: $shsn-font;
             .package-title {
               font-size: 13px;
-              font-weight: 400;
+
               color: $dim-black;
             }
             h4 {
@@ -111,19 +111,18 @@ section.category-package {
             }
             .package-info {
               font-size: 13px;
-              font-weight: 400;
+
               color: $silver-black;
             }
             .package-price {
               font-size: 15px;
-              font-weight: 400;
+
               color: $dark-black;
               text-align: end;
               margin-top: 14px;
               em {
                 font-size: 20px;
                 font-weight: 700;
-                font-style: normal;
               }
             }
           }

@@ -32,6 +32,20 @@ input {
   border: none;
 }
 
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 @font-face {
   font-family: "SpoqaHanSansNeo-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
@@ -141,7 +155,6 @@ section.category-package .category-package-inner .category-package-wrap .focus-p
 }
 section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-title {
   font-size: 13px;
-  font-weight: 400;
   color: #555555;
 }
 section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc h4 {
@@ -151,12 +164,10 @@ section.category-package .category-package-inner .category-package-wrap .focus-p
 }
 section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-info {
   font-size: 13px;
-  font-weight: 400;
   color: #777777;
 }
 section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-price {
   font-size: 15px;
-  font-weight: 400;
   color: #333333;
   text-align: end;
   margin-top: 14px;
@@ -164,7 +175,6 @@ section.category-package .category-package-inner .category-package-wrap .focus-p
 section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-price em {
   font-size: 20px;
   font-weight: 700;
-  font-style: normal;
 }
 section.category-package .category-package-inner .paging {
   display: flex;

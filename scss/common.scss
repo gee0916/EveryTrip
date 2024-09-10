@@ -6,10 +6,13 @@
 }
 
 body {
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   font-size: 15px;
   overflow-x: hidden;
+  &.active {
+    overflow: hidden;
+  }
 }
 
 /* ########### Common CSS ############ */
@@ -34,7 +37,7 @@ section:not(.front-slider) {
   }
   a {
     font-size: 14px;
-    font-weight: 400;
+
     &.btn-view-all {
       border: 1px solid $dark-gray;
       background-color: $white;
@@ -43,6 +46,15 @@ section:not(.front-slider) {
       font-size: 13px;
     }
   }
+}
+
+.btn-modal-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3em;
 }
 
 /* Header */
@@ -156,7 +168,6 @@ header {
             &:before {
               content: attr(data-count);
               color: $white;
-              font-style: normal;
               font-size: 11px;
             }
           }
@@ -166,7 +177,7 @@ header {
           div {
             font-size: 11px;
             font-family: $rw-font;
-            font-weight: 400;
+
             white-space: nowrap;
           }
         }
@@ -178,7 +189,6 @@ header {
       align-items: center;
       gap: 26px;
       a {
-        font-weight: 400;
         color: $dim-black;
         &:after {
           content: "·";
