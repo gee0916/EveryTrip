@@ -122,7 +122,7 @@ section.package-details-slider .package-details-slider-items .package-details-sl
   align-items: center;
   background-color: #ffffff;
   position: sticky;
-  top: 140px;
+  top: 120px;
   z-index: 10;
 }
 .package-details-full .package-details-full-inner .package-details-full-content .package-details-info .package-details-navi a {
