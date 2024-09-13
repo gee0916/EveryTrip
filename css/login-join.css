@@ -1,0 +1,96 @@
+/* Setting Variables : Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup .member-register {
+  width: 360px;
+}
+.signup .member-register .agreement {
+  text-align: center;
+  font-size: 12px;
+  color: #777777;
+  margin: 20px 0;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+}
+.signup .member-register .agreement label {
+  cursor: pointer;
+}
+.signup .member-register .agreement label input {
+  display: none;
+}
+.signup .member-register .agreement label input:checked + em::before {
+  content: "\f26d";
+}
+.signup .member-register .agreement label em:before {
+  content: "\f584";
+  font-family: bootstrap-icons;
+  display: inline-block;
+  margin-right: 3px;
+  transform: translateY(2px);
+  font-size: 12px;
+  color: #777777;
+}
+.signup .member-register .login-member {
+  text-align: center;
+  font-size: 13px;
+  color: #555555;
+}
+.signup .member-register .login-member a {
+  text-decoration: underline;
+}

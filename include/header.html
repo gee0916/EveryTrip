@@ -10,7 +10,7 @@
       </div>
       <div class="login-register-buttons">
         <button class="btn-login">로그인</button>
-        <button class="btn-register">회원가입</button>
+        <a href="/html/login-join.html" class="btn-register">회원가입</a>
       </div>
       <div class="user-alam">
         <a class="avatar">
@@ -93,3 +93,36 @@
     </div>
   </div>
 </header>
+
+<!-- login-modal -->
+<div class="member-login-overlay">
+  <div class="member-login">
+    <div class="member-account">
+      <h1 class="login-slogan">
+        <em>영원히 기억될 여행</em>을<br> 시작해보세요
+      </h1>
+    </div>
+    <div class="login-field">
+      <div>
+        <input type="email" placeholder="이메일">
+      </div>
+      <div>
+        <input type="password" placeholder="비밀번호" maxlength="12">
+        <i class="toggle-pw bi bi-eye bi-eye-slash"></i>
+      </div>
+      <button class="btn-member-primary">로그인</button>
+    </div>
+    <div class="join-member">
+      에브리트립이 처음이신가요?<a href="/html/login-join.html">간편 회원가입</a>
+    </div>
+    <div class="easy-login">
+      <a href="" class="btn-easy-login kakao">카카오로 시작하기</a>
+      <a href="" class="btn-easy-login facebook">페이스북으로 시작하기</a>
+      <a href="" class="btn-easy-login apple">Apple로 시작하기</a>
+      <span class="or">또는</span>
+      <a href="" class="btn-easy-login email">이메일 계정으로 시작하기</a>
+    </div>
+    <p class="login-notice">처음 로그인하면 에브리트립의 이용약관 및 개인정보처리방침에 동의한 것으로 간주합니다.</p>
+    <button class="btn-modal-close">&times;</button>
+  </div>
+</div>

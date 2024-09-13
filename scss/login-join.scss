@@ -1,0 +1,44 @@
+@import "variables", "reset", "fonts";
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .member-register {
+    width: 360px;
+    .agreement {
+      text-align: center;
+      font-size: 12px;
+      color: $silver-black;
+      margin: 20px 0;
+      border-bottom: 1px solid $dim-gray;
+      padding-bottom: 20px;
+      label {
+        cursor: pointer;
+        input {
+          display: none;
+          &:checked + em::before {
+            content: "\F26D";
+          }
+        }
+        em:before {
+          content: "\F584";
+          font-family: $bs-font;
+          display: inline-block;
+          margin-right: 3px;
+          transform: translateY(2px);
+          font-size: 12px;
+          color: $silver-black;
+        }
+      }
+    }
+    .login-member {
+      text-align: center;
+      font-size: 13px;
+      color: $dim-black;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

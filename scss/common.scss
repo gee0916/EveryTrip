@@ -118,16 +118,19 @@ header {
       }
       .login-register-buttons {
         margin-left: auto;
-        button {
+        .btn-login,
+        .btn-register {
           border: 1px solid $dim-gray;
           border-radius: 5px;
           padding: 5px 10px;
           background-color: transparent;
           margin-right: 5px;
+          font-size: 13px;
           &.btn-register {
             background-color: $green;
             color: $white;
             border: transparent;
+            display: inline-block;
           }
         }
       }
@@ -246,6 +249,154 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+/* login-modal */
+.member-login-overlay {
+  position: fixed;
+  background-color: rgba($dark-black, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+  .member-login {
+    width: 360px;
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 65px 30px 30px;
+    @at-root .member-account {
+      text-align: center;
+      .login-slogan {
+        font-family: $shsn-font;
+        font-weight: 600;
+        font-size: 20px;
+        em {
+          font-style: normal;
+          color: $green;
+        }
+      }
+      img {
+        margin: 30px 0;
+      }
+    }
+    @at-root .login-field {
+      div {
+        position: relative;
+        margin: 15px 0;
+        input {
+          border: 1px solid $dim-gray;
+          width: 100%;
+          padding: 13px;
+          border-radius: 5px;
+          &::placeholder {
+            color: $dark-gray;
+          }
+          &:focus {
+            border: 1px solid $green;
+          }
+        }
+        .bi {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $light-black;
+          cursor: pointer;
+        }
+      }
+      .btn-member-primary {
+        background-color: $green;
+        border: none;
+        color: $white;
+        width: 100%;
+        padding: 11px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    }
+    .join-member {
+      font-size: 13px;
+      text-align: center;
+      margin: 10px 0;
+      margin-bottom: 25px;
+      a {
+        text-decoration: underline;
+      }
+    }
+    .easy-login {
+      .btn-easy-login {
+        display: block;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 7px 0;
+        font-size: 16px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center left 20px;
+        background-size: 20px;
+        color: white;
+        &.kakao {
+          background-image: url("/images/kakao.svg");
+          background-color: $yellow;
+        }
+        &.facebook {
+          background-image: url("/images/facebook.svg");
+          background-color: $cyanblue;
+        }
+        &.apple {
+          background-image: url("/images/apple.svg");
+          background-color: $dark-black;
+        }
+        &.email {
+          background-image: url("/images/email.svg");
+          background-color: $white;
+          border: 1px solid $dim-gray;
+          color: $dark-black;
+        }
+      }
+      .or {
+        display: block;
+        text-align: center;
+        color: $dark-gray;
+        margin: 10px 0;
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 40%;
+          background-color: $dim-gray;
+          top: 50%;
+        }
+        &::before {
+          left: 0;
+        }
+        &::after {
+          right: 0;
+        }
+      }
+    }
+    .login-notice {
+      font-size: 12px;
+      text-align: center;
+      color: $silver-black;
+    }
+    .btn-modal-close {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      border: none;
+      background-color: transparent;
+      font-size: 1.3em;
     }
   }
 }
