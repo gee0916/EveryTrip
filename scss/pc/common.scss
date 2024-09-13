@@ -1,4 +1,4 @@
-@import "variables", "reset", "fonts";
+@import "../variables", "../reset", "../fonts";
 
 * {
   font-family: $ns-font;
@@ -15,7 +15,7 @@ body {
   }
 }
 
-/* ########### Common CSS ############ */
+/* ########### PC Common CSS ############ */
 section:not(.front-slider) {
   padding: 65px 0;
 }
@@ -208,7 +208,7 @@ header {
       .trigger {
         &:before {
           content: "";
-          background: url(../images/list.svg);
+          background: url(/images/list.svg);
           width: 20px;
           height: 18px;
           display: inline-block;
