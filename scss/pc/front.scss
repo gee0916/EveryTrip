@@ -175,12 +175,10 @@ section.category-shortcut {
             }
             .package-info {
               font-size: 13px;
-
               color: $silver-black;
             }
             .package-price {
               font-size: 15px;
-
               color: $dark-black;
               text-align: end;
               margin-top: 14px;
@@ -334,11 +332,15 @@ section.category-shortcut {
         }
       }
       .early-bird-banner {
+        display: block;
         width: 1160px;
         height: 338px;
         img {
           width: inherit;
         }
+      }
+      .mobile-early-bird-banner {
+        display: none;
       }
     }
   }
@@ -446,6 +448,7 @@ section.category-shortcut {
         }
       }
       .slogan-img {
+        display: block;
         position: absolute;
         right: 0;
         bottom: -65px;

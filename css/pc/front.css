@@ -385,11 +385,15 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   white-space: nowrap;
 }
 .early-bird .early-bird-inner .early-bird-content .early-bird-banner {
+  display: block;
   width: 1160px;
   height: 338px;
 }
 .early-bird .early-bird-inner .early-bird-content .early-bird-banner img {
   width: inherit;
+}
+.early-bird .early-bird-inner .early-bird-content .mobile-early-bird-banner {
+  display: none;
 }
 
 /* countdown */
@@ -489,6 +493,7 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   font-weight: 700;
 }
 .slogan .slogan-inner .slogan-content .slogan-img {
+  display: block;
   position: absolute;
   right: 0;
   bottom: -65px;

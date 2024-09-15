@@ -54,108 +54,171 @@ li {
 }
 /* ########### Mobile Common CSS ############ */
 @media (max-width: 767px) {
-  [class*=inner] {
-    width: 100%;
+  .container {
+    min-width: 375px;
   }
-  /* Header */
+  section:not(.front-slider) {
+    padding: 35px 10px !important;
+  }
+  [class*=inner] {
+    width: 100% !important;
+  }
+  .front-header h2 {
+    font-size: 20px;
+    white-space: normal;
+  }
+  .front-header h2 em {
+    display: inline;
+  }
+  .front-header h2 em::after {
+    content: "";
+    display: block;
+  }
+  .front-header a {
+    font-size: 13px;
+  }
+  /* header */
   header .header-inner {
-    width: 100%;
     padding: 0 10px;
+  }
+  header .header-inner .logo-search {
+    padding: 15px 0 0;
   }
   header .header-inner .logo-search .search {
     display: none;
   }
-  header .header-inner .logo-search .user-alam {
-    margin-left: auto;
-    display: none;
-  }
-  header .header-inner .logo-search .user-alam .avatar img {
-    height: 28px;
-    border-radius: 50%;
-  }
-  header .header-inner .logo-search .user-alam a {
-    margin-right: 15px;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  header .header-inner .logo-search .user-alam a .bi {
-    font-size: 20px;
-    width: 25px;
-    display: block;
-  }
-  header .header-inner .logo-search .user-alam a em {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #057233;
-    border-radius: 50%;
-    right: -1px;
-    top: 2px;
-    text-align: center;
-    line-height: 10px;
-  }
-  header .header-inner .logo-search .user-alam a em:before {
-    content: attr(data-count);
-    color: #ffffff;
-    font-size: 11px;
-  }
-  header .header-inner .logo-search .user-alam a .bi-bell + em {
-    right: -4px;
-  }
-  header .header-inner .logo-search .user-alam a div {
-    font-size: 11px;
-    font-family: "Raleway", sans-serif;
-    white-space: nowrap;
+  header .header-inner .gnb {
+    gap: 5px;
   }
   header .header-inner .gnb .trigger span {
     display: none;
   }
   header .header-inner .gnb .trigger:before {
-    background: url(/images/list.svg);
+    background: url(/images/category-search.png);
+  }
+  header .header-inner .gnb .trigger:after {
+    display: none;
   }
   header .header-inner .gnb .special-navi {
     white-space: nowrap;
     width: 360px;
+    gap: 15px;
     overflow-y: hidden;
   }
-  header .header-inner .gnb a:first-child::after {
-    display: none;
+  header .header-inner .gnb .special-navi a::after {
+    right: -8px;
   }
   header .mega-navi {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #333333;
-    width: 100%;
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    padding-top: 60px;
+  }
+  header .mega-navi .search {
+    width: 270px;
+    margin: auto;
+    display: block;
   }
   header .mega-navi .mega-navi-inner {
-    width: 1160px;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  header .mega-navi .mega-navi-inner .mega-navi-item {
-    color: #ffffff;
-    font-size: 300;
-    line-height: 1.8em;
-    flex: 1;
+  header .mega-navi .mega-navi-inner .mega-navi-item:last-child b {
+    border: none;
   }
   header .mega-navi .mega-navi-inner .mega-navi-item b {
-    color: #ffffff;
-  }
-  header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a {
+    border-bottom: 1px solid #555555;
     display: block;
+    padding: 5px 15px;
     color: #bdbdbd;
   }
-  header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover {
-    text-decoration: underline;
+  header .mega-navi .mega-navi-inner .mega-navi-item b::after {
+    content: "\f4fe";
+    font-family: bootstrap-icons;
+    float: right;
+    color: #777777;
+    font-size: 18px;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b.active {
+    color: #ffffff;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b.active::after {
+    content: "\f2ea";
+    color: #ffffff;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap {
+    padding: 10px 15px;
+    display: none;
+  }
+  header .mega-navi .btn-mega-navi-close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3em;
+    color: #ffffff;
+    display: block;
+  }
+  /* footer */
+  footer {
+    padding: 30px 0;
+  }
+  footer .footer-inner {
+    padding: 0 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    flex-direction: column;
+    border: none;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+  }
+  footer .footer-inner .lnb-wrap .lnb {
+    flex-direction: column;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title {
+    padding: 10px 0;
+    border-bottom: 1px solid #777777;
+    pointer-events: all;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title::after {
+    content: "\f282";
+    font-family: bootstrap-icons;
+    float: right;
+    margin-right: 5px;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title.active:after {
+    transform: rotateX(180deg);
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content {
+    padding: 5px 0;
+    display: none;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content a {
+    padding: 3px 0;
+  }
+  footer .footer-inner .copyright-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-inner .copyright-wrap .company-info-trigger {
+    color: #ffffff;
+    font-weight: 400;
+  }
+  footer .footer-inner .copyright-wrap .company-info-trigger::after {
+    content: "\f282";
+    font-family: bootstrap-icons;
+    margin-left: 5px;
+  }
+  footer .footer-inner .copyright-wrap address {
+    display: none;
+  }
+  footer .footer-inner .copyright-wrap .sns {
+    margin-top: 10px;
   }
 }
