@@ -2,128 +2,187 @@
 
 /* ########### Mobile Common CSS ############ */
 @media (max-width: 767px) {
+  .container {
+    min-width: 375px;
+  }
+  section:not(.front-slider) {
+    padding: 35px 10px !important;
+  }
   [class*="inner"] {
-    width: 100%;
+    width: 100% !important;
+  }
+  .front-header {
+    h2 {
+      font-size: 20px;
+      white-space: normal;
+      em {
+        display: inline;
+        &::after {
+          content: "";
+          display: block;
+        }
+      }
+    }
+    a {
+      font-size: 13px;
+    }
   }
 
-  /* Header */
+  /* header */
   header {
     .header-inner {
-      width: 100%;
       padding: 0 10px;
       .logo-search {
-        .logo {
-          img {
-          }
-        }
+        padding: 15px 0 0;
         .search {
           display: none;
         }
-        .login-register-buttons {
-        }
-        .user-alam {
-          margin-left: auto;
-          display: none;
-          .avatar {
-            img {
-              height: 28px;
-              border-radius: 50%;
-            }
-          }
-          a {
-            margin-right: 15px;
-            vertical-align: middle;
-            text-align: center;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-            .bi {
-              font-size: 20px;
-              width: 25px;
-              display: block;
-            }
-            em {
-              position: absolute;
-              width: 15px;
-              height: 15px;
-              background-color: $green;
-              border-radius: 50%;
-              right: -1px;
-              top: 2px;
-              text-align: center;
-              line-height: 10px;
-              &:before {
-                content: attr(data-count);
-                color: $white;
-                font-size: 11px;
-              }
-            }
-            .bi-bell + em {
-              right: -4px;
-            }
-            div {
-              font-size: 11px;
-              font-family: $rw-font;
-
-              white-space: nowrap;
-            }
-          }
-        }
       }
       .gnb {
+        gap: 5px;
         .trigger {
           span {
             display: none;
           }
           &:before {
-            background: url(/images/list.svg);
+            background: url(/images/category-search.png);
+          }
+        }
+        .trigger {
+          &:after {
+            display: none;
           }
         }
         .special-navi {
           white-space: nowrap;
           width: 360px;
+          gap: 15px;
           overflow-y: hidden;
-        }
-        a {
-          &:first-child::after {
-            display: none;
+          a {
+            &::after {
+              right: -8px;
+            }
           }
         }
       }
     }
     .mega-navi {
-      position: absolute;
-      left: 0;
-      top: 100%;
-      background-color: $dark-black;
-      width: 100%;
-      display: none;
-      .mega-navi-inner {
-        width: 1160px;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 300px;
+      height: 100vh;
+      padding-top: 60px;
+      .search {
+        width: 270px;
         margin: auto;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
+        display: block;
+      }
+      .mega-navi-inner {
+        flex-direction: column;
         .mega-navi-item {
-          color: $white;
-          font-size: 300;
-          line-height: 1.8em;
-          flex: 1;
+          &:last-child b {
+            border: none;
+          }
           b {
-            color: $white;
+            border-bottom: 1px solid $dim-black;
+            display: block;
+            padding: 5px 15px;
+            color: $dark-gray;
+            &::after {
+              content: "\f4fe";
+              font-family: $bs-font;
+              float: right;
+              color: $silver-black;
+              font-size: 18px;
+            }
+            &.active {
+              color: $white;
+            }
+            &.active::after {
+              content: "\f2ea";
+              color: $white;
+            }
           }
           .mega-navi-item-wrap {
-            a {
-              display: block;
-              color: $dark-gray;
-              &:hover {
-                text-decoration: underline;
+            padding: 10px 15px;
+            display: none;
+          }
+        }
+      }
+      .btn-mega-navi-close {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: 1.3em;
+        color: $white;
+        display: block;
+      }
+    }
+  }
+
+  /* footer */
+  footer {
+    padding: 30px 0;
+    .footer-inner {
+      padding: 0 20px;
+      .lnb-wrap {
+        flex-direction: column;
+        border: none;
+        .footer-slogan {
+          h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: $white;
+          }
+        }
+        .lnb {
+          flex-direction: column;
+          .link-item {
+            .link-item-title {
+              padding: 10px 0;
+              border-bottom: 1px solid $silver-black;
+              pointer-events: all;
+              &::after {
+                content: "\f282";
+                font-family: $bs-font;
+                float: right;
+                margin-right: 5px;
+              }
+              &.active:after {
+                transform: rotateX(180deg);
+              }
+            }
+            .link-item-content {
+              padding: 5px 0;
+              display: none;
+              a {
+                padding: 3px 0;
               }
             }
           }
+        }
+      }
+      .copyright-wrap {
+        flex-direction: column;
+        text-align: center;
+        .company-info-trigger {
+          color: $white;
+          font-weight: 400;
+          &::after {
+            content: "\f282";
+            font-family: $bs-font;
+            margin-left: 5px;
+          }
+        }
+        address {
+          display: none;
+        }
+        .sns {
+          margin-top: 10px;
         }
       }
     }

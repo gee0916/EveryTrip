@@ -85,7 +85,7 @@ header {
           height: 23px;
         }
       }
-      .search {
+      @at-root .search {
         width: 520px;
         position: relative;
         input[type="text"] {
@@ -190,12 +190,14 @@ header {
       height: 50px;
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 45px;
       a {
-        color: $dim-black;
+        color: $dark-black;
+        position: relative;
         &:after {
           content: "·";
-          padding-left: 13px;
+          right: -23px;
+          position: absolute;
           cursor: default;
         }
         &:last-child:after {
@@ -216,6 +218,26 @@ header {
           transform: translateY(4px);
         }
       }
+      .special-navi {
+        display: flex;
+        gap: 45px;
+        a {
+          color: $dark-black;
+          position: relative;
+          &:after {
+            content: "·";
+            right: -23px;
+            position: absolute;
+            cursor: default;
+          }
+          &:last-child:after {
+            display: none;
+          }
+          &:hover {
+            color: $green;
+          }
+        }
+      }
     }
   }
   .mega-navi {
@@ -225,6 +247,9 @@ header {
     background-color: $dark-black;
     width: 100%;
     display: none;
+    .search {
+      display: none;
+    }
     .mega-navi-inner {
       width: 1160px;
       margin: auto;
@@ -249,6 +274,9 @@ header {
           }
         }
       }
+    }
+    .btn-mega-navi-close {
+      display: none;
     }
   }
 }
@@ -430,6 +458,7 @@ footer {
         .link-item {
           .link-item-title {
             color: $silver-gray;
+            pointer-events: none;
           }
           .link-item-content {
             a {
@@ -447,6 +476,9 @@ footer {
       justify-content: space-between;
       padding-top: 30px;
       align-items: center;
+      .company-info-trigger {
+        display: none;
+      }
       address {
         font-style: normal;
       }
