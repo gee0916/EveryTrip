@@ -4,6 +4,7 @@
 @media (max-width: 767px) {
   /* front-slider */
   .front-slider {
+    overflow-x: hidden;
     .front-slider-items {
       .slick-slide {
         .front-slider-item-wrap {

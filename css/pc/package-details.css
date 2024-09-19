@@ -124,6 +124,8 @@ section.package-details-slider .package-details-slider-items .package-details-sl
   top: 120px;
   position: sticky;
   z-index: 10;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.05);
 }
 .package-details-full .package-details-full-inner .package-details-full-content .package-details-info .package-details-navi a {
   position: relative;
@@ -228,6 +230,7 @@ section.package-details-slider .package-details-slider-items .package-details-sl
   font-size: 16px;
 }
 .package-details-full .package-details-full-inner .package-details-full-content .package-details-info .key-points .package-details-wrap strong {
+  display: block;
   margin-bottom: 3px;
 }
 .package-details-full .package-details-full-inner .package-details-full-content .package-details-info .key-points .package-details-wrap ul {
