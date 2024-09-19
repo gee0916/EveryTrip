@@ -52,6 +52,9 @@ li {
   font-weight: normal;
   font-style: normal;
 }
+.reservation {
+  background-color: #f9f9f9;
+}
 .reservation .reservation-inner {
   display: flex;
   gap: 30px;

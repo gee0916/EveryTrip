@@ -1,6 +1,6 @@
 @import "../variables", "../reset", "../fonts";
 
-/* ########### Mobile Common CSS ############ */
+/* ########### Mobile CSS ############ */
 @media (max-width: 767px) {
   /* front-slider */
   .front-slider {
@@ -95,7 +95,7 @@
       .focus-package-content {
         .focus-package-items1,
         .focus-package-items2 {
-          width: 700px;
+          width: 600px;
           .slick-list {
             margin: 0 -5px;
           }
