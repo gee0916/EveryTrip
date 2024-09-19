@@ -1,0 +1,40 @@
+@import "../variables", "../reset", "../fonts";
+
+/* ########### Mobile CSS ############ */
+@media (max-width: 767px) {
+  section.reservation {
+    padding: 0 !important;
+    .reservation-inner {
+      gap: 0;
+      flex-direction: column;
+      > div {
+        background-color: $white;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px;
+      }
+      .detail-wrap {
+        width: 100%;
+        .detail-items {
+          .detail-item {
+            border-radius: 0;
+            padding: 10px;
+            flex-wrap: wrap;
+            .thum {
+              height: 100px;
+            }
+            .package-wrap {
+              flex: none;
+            }
+            .package-inquiry {
+              margin-top: 10px;
+              width: 100%;
+              text-align: center;
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

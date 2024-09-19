@@ -53,7 +53,7 @@ li {
   font-weight: normal;
   font-style: normal;
 }
-/* ########### Mobile Common CSS ############ */
+/* ########### Mobile CSS ############ */
 @media (max-width: 767px) {
   /* front-slider */
   .front-slider .front-slider-items .slick-slide .front-slider-item-wrap.first {
@@ -129,7 +129,7 @@ li {
   }
   .focus-package .focus-package-inner .focus-package-content .focus-package-items1,
   .focus-package .focus-package-inner .focus-package-content .focus-package-items2 {
-    width: 700px;
+    width: 600px;
   }
   .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .slick-list,
   .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .slick-list {
