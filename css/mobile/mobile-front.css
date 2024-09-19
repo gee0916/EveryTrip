@@ -56,6 +56,9 @@ li {
 /* ########### Mobile CSS ############ */
 @media (max-width: 767px) {
   /* front-slider */
+  .front-slider {
+    overflow-x: hidden;
+  }
   .front-slider .front-slider-items .slick-slide .front-slider-item-wrap.first {
     background-position: 70%;
   }
