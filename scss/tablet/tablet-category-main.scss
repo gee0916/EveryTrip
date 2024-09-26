@@ -1,0 +1,70 @@
+@import "../variables", "../reset", "../fonts";
+
+/* ########### Tablet CSS ############ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.category-package {
+    padding: 10px 10px 65px 10px !important;
+    .category-package-inner {
+      .category-package-main {
+        height: 260px;
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .category-package-detail {
+        .category-shortcut-btn-group {
+          .btn-shortcut {
+            font-size: 14px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .category-package-sort {
+        button {
+          &:before {
+            padding: 0px 11px;
+          }
+        }
+      }
+      .category-package-wrap {
+        overflow-x: hidden;
+        .focus-package-items {
+          width: 900px;
+          margin-bottom: 20px;
+          .slick-list {
+            margin: 0 -5px;
+          }
+          .slick-slide {
+            margin: 0 5px;
+          }
+          .focus-package-item {
+            .thum {
+              height: 260px;
+            }
+            .desc {
+              .package-title {
+                font-size: 14px;
+              }
+              h4 {
+                font-size: 16px;
+              }
+              .package-info {
+                font-size: 14px;
+              }
+              .package-price {
+                font-size: 13px;
+                em {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .paging {
+        margin-top: 20px;
+      }
+    }
+  }
+}

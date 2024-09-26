@@ -1,0 +1,239 @@
+@import "../variables", "../reset", "../fonts";
+
+/* ########### Tablet CSS ############ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* package-details-slider */
+  section.package-details-slider {
+    min-width: auto;
+    margin-bottom: 0;
+    padding: 0 0 35px !important;
+    .package-details-slider-items {
+      margin-bottom: 0;
+      .slick-list {
+        height: auto;
+        margin: 0;
+      }
+      .slick-slide {
+        margin: 0;
+        &:not(.slick-center) {
+          filter: none;
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        display: none !important;
+      }
+      .package-details-slider-item {
+        height: 360px;
+      }
+    }
+  }
+
+  /* package-details */
+  section.package-details-full {
+    padding: 0 !important;
+    .package-details-full-inner {
+      .package-details-full-content {
+        flex-direction: column-reverse;
+        .package-details-info {
+          background: $white;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 10px;
+          .package-details-navi {
+            flex-wrap: wrap;
+            padding: 10px 0 75px;
+            top: 96px;
+            border-bottom: 1px solid rgba($dark-black, 0.05);
+            a {
+              font-size: 14px;
+            }
+          }
+          article {
+            margin: 35px 0;
+          }
+          .package-details-header {
+            &::before {
+              top: 2px;
+              height: 30px;
+            }
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .key-schedule {
+            ul {
+              li {
+                font-size: 15px;
+                word-break: auto-phrase;
+                &:nth-child(2) {
+                  flex-direction: column;
+                }
+                &:last-child {
+                  width: 300px;
+                }
+              }
+              strong {
+                display: block;
+                margin-right: 10px;
+              }
+            }
+          }
+          .price {
+            table {
+              th {
+                font-size: 15px;
+                padding: 10px 0;
+              }
+              td {
+                padding: 20px 0;
+                font-size: 13px;
+                &:not(:first-child) {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .key-points {
+            .package-details-wrap {
+              ul {
+                font-size: 15px;
+                li {
+                  list-style: decimal;
+                  margin-left: 23px;
+                }
+                span {
+                  display: none;
+                }
+              }
+            }
+          }
+          .incl-notincl {
+            .package-details-wrap {
+              div {
+                flex-direction: column;
+                strong {
+                  width: auto;
+                  margin-bottom: 5px;
+                  font-size: 15px;
+                }
+                ol {
+                  margin-left: 23px;
+                  li {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+          .schedule-details {
+            .place-wrap {
+              display: flex;
+              align-items: flex-end;
+              flex-direction: column;
+              .place-inner {
+                font-size: 15px;
+              }
+              .place-btn {
+                margin-top: 8px;
+                font-size: 12px;
+                padding: 4px 10px;
+              }
+            }
+            .schedule-details-navi {
+              word-break: auto-phrase;
+              a {
+                font-size: 15px;
+                padding: 22px 5px;
+              }
+            }
+            .schedule-details-all-btn {
+              margin-bottom: 25px;
+            }
+            .schedule-details-items {
+              gap: 20px;
+              .schedule-details-item {
+                .schedule-details-header {
+                  strong {
+                    font-size: 15px;
+                    &:nth-child(1) {
+                      margin-right: 30px;
+                    }
+                    &:nth-child(2) {
+                      display: block;
+                      margin-right: 23px;
+                      &::after {
+                        display: none;
+                      }
+                    }
+                    &:nth-child(3) {
+                      display: block;
+                    }
+                  }
+                  .schedule-details-content-btn {
+                    .bi {
+                      &::before {
+                        top: 50%;
+                      }
+                    }
+                  }
+                }
+                .schedule-details-content {
+                  margin-left: 0;
+                  ul {
+                    li {
+                      display: flex;
+                      word-break: auto-phrase;
+                      strong {
+                        display: inline-block;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .prec {
+            ul {
+              li {
+                font-size: 15px;
+              }
+            }
+          }
+          .review {
+            .review-stars-rating {
+              padding: 5px 25px;
+              .stars-rating-count {
+                .review-stars {
+                  .bi {
+                    font-size: 25px;
+                  }
+                }
+                .review-rating {
+                  font-size: 30px;
+                }
+                .review-count {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+        .package-details-sidebar {
+          position: static;
+          .package-info-wrap {
+            background: $white;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 10px;
+          }
+          .package-details-banner {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
