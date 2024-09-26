@@ -1,0 +1,108 @@
+/* Setting Variables : Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ########### Tablet CSS ############ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.category-package {
+    padding: 10px 10px 65px 10px !important;
+  }
+  section.category-package .category-package-inner .category-package-main {
+    height: 260px;
+  }
+  section.category-package .category-package-inner .category-package-main h2 {
+    font-size: 30px;
+  }
+  section.category-package .category-package-inner .category-package-detail .category-shortcut-btn-group .btn-shortcut {
+    font-size: 14px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  section.category-package .category-package-inner .category-package-sort button:before {
+    padding: 0px 11px;
+  }
+  section.category-package .category-package-inner .category-package-wrap {
+    overflow-x: hidden;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items {
+    width: 900px;
+    margin-bottom: 20px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .slick-list {
+    margin: 0 -5px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .slick-slide {
+    margin: 0 5px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .thum {
+    height: 260px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-title {
+    font-size: 14px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc h4 {
+    font-size: 16px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-info {
+    font-size: 14px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-price {
+    font-size: 13px;
+  }
+  section.category-package .category-package-inner .category-package-wrap .focus-package-items .focus-package-item .desc .package-price em {
+    font-size: 17px;
+  }
+  section.category-package .category-package-inner .paging {
+    margin-top: 20px;
+  }
+}

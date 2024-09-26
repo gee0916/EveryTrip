@@ -148,7 +148,7 @@ header .header-inner .logo-search .logo img {
   width: 100%;
   background-color: #f5f5f5;
   border: 1px solid #eeeeee;
-  padding: 10px;
+  padding: 8px;
   padding-left: 20px;
   border-radius: 30px;
 }
@@ -177,6 +177,8 @@ header .header-inner .logo-search .logo img {
 
 header .header-inner .logo-search .login-register-buttons {
   margin-left: auto;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 header .header-inner .logo-search .login-register-buttons .btn-login,
 header .header-inner .logo-search .login-register-buttons .btn-register {
@@ -313,7 +315,7 @@ header .mega-navi .mega-navi-inner {
 }
 header .mega-navi .mega-navi-inner .mega-navi-item {
   color: #ffffff;
-  font-size: 300;
+  font-weight: 300;
   line-height: 1.8em;
   flex: 1;
 }

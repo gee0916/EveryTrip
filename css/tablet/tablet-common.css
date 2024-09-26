@@ -1,0 +1,132 @@
+/* Setting Variables : Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ########### Tablet Common CSS ############ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section:not(.front-slider) {
+    padding: 35px 10px !important;
+  }
+  [class*=inner] {
+    width: 100% !important;
+  }
+  /* header */
+  header {
+    padding: 0 10px;
+  }
+  header .header-inner .logo-search .search {
+    width: 300px;
+  }
+  header .mega-navi .mega-navi-inner {
+    padding: 20px;
+  }
+  /* footer */
+  footer {
+    padding: 30px 0;
+  }
+  footer .footer-inner {
+    padding: 0 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    flex-direction: column;
+    border: none;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+  }
+  footer .footer-inner .lnb-wrap .lnb {
+    flex-direction: column;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title {
+    padding: 10px 0;
+    border-bottom: 1px solid #777777;
+    pointer-events: all;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title::after {
+    content: "\f282";
+    font-family: bootstrap-icons;
+    float: right;
+    margin-right: 5px;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title.active:after {
+    transform: rotateX(180deg);
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content {
+    padding: 5px 0;
+    display: none;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content a {
+    padding: 3px 0;
+  }
+  footer .footer-inner .copyright-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-inner .copyright-wrap .company-info-trigger {
+    color: #ffffff;
+    font-weight: 400;
+  }
+  footer .footer-inner .copyright-wrap .company-info-trigger::after {
+    content: "\f282";
+    font-family: bootstrap-icons;
+    margin-left: 5px;
+  }
+  footer .footer-inner .copyright-wrap address {
+    display: none;
+  }
+  footer .footer-inner .copyright-wrap .sns {
+    margin-top: 10px;
+  }
+}

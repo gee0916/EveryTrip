@@ -1,0 +1,93 @@
+@import "../variables", "../reset", "../fonts";
+
+/* ########### Tablet Common CSS ############ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section:not(.front-slider) {
+    padding: 35px 10px !important;
+  }
+
+  [class*="inner"] {
+    width: 100% !important;
+  }
+
+  /* header */
+  header {
+    padding: 0 10px;
+    .header-inner {
+      .logo-search {
+        .search {
+          width: 300px;
+        }
+      }
+    }
+    .mega-navi {
+      .mega-navi-inner {
+        padding: 20px;
+      }
+    }
+  }
+
+  /* footer */
+  footer {
+    padding: 30px 0;
+    .footer-inner {
+      padding: 0 20px;
+      .lnb-wrap {
+        flex-direction: column;
+        border: none;
+        .footer-slogan {
+          h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: $white;
+          }
+        }
+        .lnb {
+          flex-direction: column;
+          .link-item {
+            .link-item-title {
+              padding: 10px 0;
+              border-bottom: 1px solid $silver-black;
+              pointer-events: all;
+              &::after {
+                content: "\f282";
+                font-family: $bs-font;
+                float: right;
+                margin-right: 5px;
+              }
+              &.active:after {
+                transform: rotateX(180deg);
+              }
+            }
+            .link-item-content {
+              padding: 5px 0;
+              display: none;
+              a {
+                padding: 3px 0;
+              }
+            }
+          }
+        }
+      }
+      .copyright-wrap {
+        flex-direction: column;
+        text-align: center;
+        .company-info-trigger {
+          color: $white;
+          font-weight: 400;
+          &::after {
+            content: "\f282";
+            font-family: $bs-font;
+            margin-left: 5px;
+          }
+        }
+        address {
+          display: none;
+        }
+        .sns {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
