@@ -90,6 +90,7 @@ li {
     flex-direction: column-reverse;
   }
   section.package-details-full .package-details-full-inner .package-details-full-content .package-details-info {
+    margin: 0 auto;
     background: #ffffff;
     border-radius: 0;
     box-shadow: none;

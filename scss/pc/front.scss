@@ -529,3 +529,40 @@ section.category-shortcut {
     }
   }
 }
+
+/* event banner */
+.front-event-banner {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  .event-banner-item {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    border: 1px solid $silver-gray;
+    width: 300px;
+    height: 300px;
+    a {
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .close-buttons {
+    background-color: $white;
+    height: 40px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $silver-gray;
+    border-top: none;
+    a {
+      flex: 1;
+      border-right: 1px solid $dim-gray;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}

@@ -560,3 +560,40 @@ section.category-shortcut .category-shortcut-inner .category-shortcut-items .cat
   white-space: nowrap;
   cursor: pointer;
 }
+
+/* event banner */
+.front-event-banner {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.front-event-banner .event-banner-item {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  width: 300px;
+  height: 300px;
+}
+.front-event-banner .event-banner-item a {
+  display: inline-block;
+}
+.front-event-banner .event-banner-item a img {
+  width: 100%;
+}
+.front-event-banner .close-buttons {
+  background-color: #ffffff;
+  height: 40px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.front-event-banner .close-buttons a {
+  flex: 1;
+  border-right: 1px solid #dddddd;
+}
+.front-event-banner .close-buttons a:last-child {
+  border: none;
+}

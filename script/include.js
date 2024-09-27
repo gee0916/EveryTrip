@@ -44,6 +44,14 @@ $(function () {
       $(".member-login-overlay").fadeOut();
     });
 
+    /* header loogin modal change */
+    $(".btn-member-primary").click(function () {
+      $(".member-login-overlay").fadeOut();
+      $(".user-alarm").show().css("display", "flex");
+      $(".login-register-buttons").hide();
+      $("body").removeClass("active");
+    });
+
     /* mobile mega-navi */
     $(".mega-navi-item b").click(function () {
       $(".mega-navi-item-wrap").slideUp(200);
