@@ -1,4 +1,9 @@
 $(function () {
+  /* event-banner */
+  $(".close-buttons a").click(function () {
+    $(".front-event-banner").fadeOut();
+  });
+
   /* front slider */
   $(".front-slider-items").slick({
     infinite: true,

@@ -262,7 +262,7 @@
 
   /* slogan */
   .slogan {
-    background-image: url(/images/슬로건\ 이미지.png);
+    background-image: url(/images/슬로건\ 이미지.webp);
     background-position: 65%;
     height: 200px;
     .slogan-inner {
@@ -318,5 +318,11 @@
         }
       }
     }
+  }
+
+  /* event banner */
+  .front-event-banner {
+    right: 50%;
+    transform: translateX(50%);
   }
 }

@@ -60,7 +60,7 @@ li {
   section:not(.front-slider) {
     padding: 35px 10px !important;
   }
-  [class*=inner] {
+  [class*="inner"] {
     width: 100% !important;
   }
   .front-header h2 {
@@ -94,7 +94,7 @@ li {
     display: none;
   }
   header .header-inner .gnb .trigger:before {
-    background: url(/images/category-search.png);
+    background: url(/images/category-search.webp);
   }
   header .header-inner .gnb .trigger:after {
     display: none;

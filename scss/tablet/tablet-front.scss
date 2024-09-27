@@ -87,6 +87,7 @@
         .focus-package-items1,
         .focus-package-items2 {
           width: 900px;
+          margin: 0 auto;
           .slick-list {
             margin: 0 -5px;
           }
@@ -234,7 +235,7 @@
 
   /* slogan */
   .slogan {
-    background-image: url(/images/슬로건\ 이미지.png);
+    background-image: url(/images/슬로건\ 이미지.webp);
     background-position: 52%;
     height: 200px;
     .slogan-inner {
