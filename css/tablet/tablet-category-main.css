@@ -76,7 +76,8 @@ li {
   }
   section.category-package .category-package-inner .category-package-wrap .focus-package-items {
     width: 900px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
   }
   section.category-package .category-package-inner .category-package-wrap .focus-package-items .slick-list {
     margin: 0 -5px;

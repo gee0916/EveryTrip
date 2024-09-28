@@ -90,6 +90,7 @@ li {
     flex-direction: column-reverse;
   }
   section.package-details-full .package-details-full-inner .package-details-full-content .package-details-info {
+    max-width: none;
     margin: 0 auto;
     background: #ffffff;
     border-radius: 0;
@@ -233,6 +234,9 @@ li {
   }
   section.package-details-full .package-details-full-inner .package-details-full-content .package-details-info .review .review-stars-rating .stars-rating-count .review-count {
     font-size: 15px;
+  }
+  section.package-details-full .package-details-full-inner .package-details-full-content .package-details-info .review .review-stars-rating .review-diagram-group {
+    padding: 0 188px;
   }
   section.package-details-full .package-details-full-inner .package-details-full-content .package-details-sidebar {
     position: static;

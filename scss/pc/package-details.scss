@@ -712,3 +712,33 @@ section.package-details-slider {
     }
   }
 }
+
+/* go to top button */
+.gototop {
+  cursor: pointer;
+  border: 1px solid $silver-gray;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  position: fixed;
+  bottom: 20px;
+  left: -100px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 5px rgba($black, 0.1);
+  transform: 0.35s;
+  &.active {
+    left: 20px;
+  }
+  .bi {
+    color: $light-black;
+  }
+  &::after {
+    content: "top";
+    text-transform: uppercase;
+    color: $light-black;
+    font-size: 10px;
+    display: block;
+    margin-top: -3px;
+  }
+}
