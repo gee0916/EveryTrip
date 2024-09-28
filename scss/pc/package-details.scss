@@ -59,10 +59,7 @@ section.package-details-slider {
       gap: 30px;
       .package-details-info {
         flex: 1;
-        background-color: $white;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba($black, 0.05);
-        padding: 30px;
+        @include layout-boxshadow;
         max-width: 818px;
         .package-details-navi {
           height: 50px;
@@ -502,10 +499,7 @@ section.package-details-slider {
         top: 140px;
         height: fit-content;
         .package-info-wrap {
-          background-color: $white;
-          border-radius: 10px;
-          box-shadow: 0 0 20px rgba($black, 0.05);
-          padding: 30px;
+          @include layout-boxshadow;
           .package-info {
             .hash-tag-group {
               font-size: 13px;

@@ -15,6 +15,14 @@ body {
   }
 }
 
+/* mixin */
+@mixin layout-boxshadow {
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba($black, 0.05);
+  padding: 30px;
+}
+
 /* ########### PC Common CSS ############ */
 section:not(.front-slider) {
   padding: 65px 0;
