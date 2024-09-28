@@ -6,10 +6,8 @@
     display: flex;
     gap: 30px;
     > div {
-      background-color: $white;
+      @include layout-boxshadow;
       border-radius: 5px;
-      box-shadow: 0 0 20px rgba($black, 0.05);
-      padding: 30px;
     }
     .headline {
       font-size: 20px;
