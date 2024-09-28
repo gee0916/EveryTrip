@@ -38,6 +38,7 @@
       .package-details-full-content {
         flex-direction: column-reverse;
         .package-details-info {
+          max-width: none;
           margin: 0 auto;
           background: $white;
           border-radius: 0;
@@ -218,6 +219,9 @@
                 .review-count {
                   font-size: 15px;
                 }
+              }
+              .review-diagram-group {
+                padding: 0 188px;
               }
             }
           }

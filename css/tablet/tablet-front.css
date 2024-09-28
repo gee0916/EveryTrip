@@ -137,74 +137,24 @@ li {
   .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .thum {
     height: 200px;
   }
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items1
-    .focus-package-item
-    .desc
-    .package-title,
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items2
-    .focus-package-item
-    .desc
-    .package-title {
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-title,
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-title {
     font-size: 12px;
   }
   .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc h4,
   .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc h4 {
     font-size: 14px;
   }
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items1
-    .focus-package-item
-    .desc
-    .package-info,
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items2
-    .focus-package-item
-    .desc
-    .package-info {
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-info,
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-info {
     font-size: 12px;
   }
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items1
-    .focus-package-item
-    .desc
-    .package-price,
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items2
-    .focus-package-item
-    .desc
-    .package-price {
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-price,
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price {
     font-size: 12px;
   }
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items1
-    .focus-package-item
-    .desc
-    .package-price
-    em,
-  .focus-package
-    .focus-package-inner
-    .focus-package-content
-    .focus-package-items2
-    .focus-package-item
-    .desc
-    .package-price
-    em {
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items1 .focus-package-item .desc .package-price em,
+  .focus-package .focus-package-inner .focus-package-content .focus-package-items2 .focus-package-item .desc .package-price em {
     font-size: 16px;
   }
   .focus-package .focus-package-inner .focus-package-content .controls1,
@@ -223,116 +173,42 @@ li {
   .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer {
     gap: 10px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-intro {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro {
     padding: 10px 0;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     text-align: center;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-intro
-    h3 {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro h3 {
     font-size: 20px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-intro
-    .desc,
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-intro
-    .tag {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro .desc,
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-intro .tag {
     font-size: 18px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items {
     flex-direction: row;
     justify-content: space-between;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item {
     width: 100%;
     flex-direction: column;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item
-    .thum {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .thum {
     width: 100%;
     height: 100%;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item
-    .desc
-    .best-package-title {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-title {
     font-size: 13px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item
-    .desc
-    h4 {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc h4 {
     font-size: 15px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item
-    .desc
-    .best-package-info {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-info {
     word-break: auto-phrase;
     font-size: 11px;
   }
-  .best-package
-    .best-package-inner
-    .best-package-content
-    .best-package-wrap
-    .best-package-items-outer
-    .best-package-items
-    .best-package-item
-    .desc
-    .best-package-price
-    em {
+  .best-package .best-package-inner .best-package-content .best-package-wrap .best-package-items-outer .best-package-items .best-package-item .desc .best-package-price em {
     font-size: 16px;
   }
   /* early-bird */
