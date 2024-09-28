@@ -1,5 +1,7 @@
 # EveryTrip
+![image](https://github.com/user-attachments/assets/5bfcf85b-a1de-4e0b-8728-4a65f125148f)
 ### ✈완벽한 해외여행을 위한 여행 상품을 한 눈에 비교할 수 있는 사이트입니다
+- [피그마 보러가기](https://www.figma.com/design/M1UkdlZdAcR7yc9ncuNsMy/everytrip?node-id=0-1&m=dev&t=9hTwMRUTqlQ27etA-1)
 
 ## 1. 프로젝트 개요
 EveryTrip은 사용자가 다양한 해외여행 상품을 쉽게 비교하고 선택할 수 있도록 설계된 반응형 웹사이트입니다. 
@@ -20,4 +22,3 @@ SCSS를 선택한 이유는 다음과 같은 여러 장점 때문입니다.
 - **반응형 웹 디자인:** PC, 모바일, 태블릿에 맞춰 최적화된 레이아웃을 설계하고 제작했습니다.
 - **일관성 있는 클래스네임:** 코드의 가독성과 유지보수성을 높이기 위해 체계적인 클래스 네이밍을 사용했습니다.
 - **UI/UX 디자인:** Figma를 활용해 전체 웹사이트의 메인 페이지와 핵심 서브 페이지의 UI 디자인을 완료했습니다.
-  - [피그마 보러가기](https://www.figma.com/design/M1UkdlZdAcR7yc9ncuNsMy/everytrip?node-id=0-1&m=dev&t=9hTwMRUTqlQ27etA-1)
