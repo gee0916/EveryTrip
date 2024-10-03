@@ -2,6 +2,7 @@
 ![image](https://github.com/user-attachments/assets/5bfcf85b-a1de-4e0b-8728-4a65f125148f)
 ### ✈완벽한 해외여행을 위한 여행 상품을 한 눈에 비교할 수 있는 사이트입니다
 - [피그마 보러가기](https://www.figma.com/design/M1UkdlZdAcR7yc9ncuNsMy/everytrip?node-id=0-1&m=dev&t=9hTwMRUTqlQ27etA-1)
+- [URL](https://every-trip.vercel.app/)
 
 ## 1. 프로젝트 개요
 EveryTrip은 사용자가 다양한 해외여행 상품을 쉽게 비교하고 선택할 수 있도록 설계된 반응형 웹사이트입니다. 
